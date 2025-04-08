@@ -1,31 +1,38 @@
-# React & Tailwind CSS Starter Pack
+# 🔐 Login-GoogleAuth App
 
-This is a starter pack for creating React projects with Tailwind CSS configured. It uses React version **18.2** and Tailwind CSS version **3.2**.
+This is a simple **React + Firebase Authentication** project that supports:
 
-## Usage
+- ✅ User **registration**
+- ✅ User **login** with email/password
+- ✅ User **login via Google**
+- ✅ **User profile page** with Firestore integration
+- ✅ Fully styled using **Tailwind CSS**
+- ✅ Toast notifications with `react-toastify`
 
-This starter pack includes a basic setup for using **Tailwind CSS with React**. To start building your own components and styles, follow these steps:
+---
 
-1. Clone the repository to your local machine.
-    ```sh
-    git clone https://github.com/thepranaygupta/react-tailwind-css-starter-pack.git
-    ```
+## 🚀 Features
 
-1. Install the required packages.
-    ```sh
-    cd react-tailwind-css-starter-pack
-    npm install
-    ```
+- 🔑 **Sign Up** – Register using name, email, and password
+- 🔓 **Login** – Sign in using credentials
+- 🟢 **Google Auth** – Sign in with Google account
+- 📄 **Profile Page** – Displays user info (name, email) from Firebase Firestore
+- 🔒 **Logout** – Secure sign-out feature
+- 🌐 Responsive UI using Tailwind CSS
 
-1. Start the development server.
-    ```sh
-    npm start
-    ```
-1. Open the project in your browser at [`http://localhost:3000`](http://localhost:3000) to view your project.
-1. Create your React components and add your styles using Tailwind classes. You can also create new CSS files and import them into your components.
+---
 
-The project is set up to use `postcss-cli` to process your CSS files. You can add your own `tailwind.config.js` file to customize your Tailwind setup.
+## 🧰 Tech Stack
 
-## Contributing
+- **Frontend**: React.js, Tailwind CSS, React Toastify
+- **Backend**: Firebase Auth & Firestore
 
-Contributions are welcome! If you have any suggestions or find any issues, please feel free to open an issue or a pull request.
+---
+
+## 🛠️ Setup Instructions
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Nikhil-4102/Login-GoogleAuth.git
+cd Login-GoogleAuth
