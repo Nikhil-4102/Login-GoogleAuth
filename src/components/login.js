@@ -2,6 +2,7 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "./firebase";
 import React, { useState } from "react";
 import { toast } from "react-toastify";
+import SigninWithGoogle from "./signinWithGoogle";
 
 function Login() {
     const [email, setEmail] = useState("");
@@ -67,11 +68,16 @@ function Login() {
                 </button>
 
                 <p className="mt-4 text-center text-sm text-gray-600">
-                    New user?{" "}
-                    <a href="/register" className="text-blue-600 hover:underline">
-                        Register Here
-                    </a>
-                </p>
+  New user?{" "}
+  <a
+    href="/register"
+    className="text-blue-600 font-medium hover:underline transition duration-150 ease-in-out"
+  >
+    Register Here
+  </a>
+</p>
+
+                <SigninWithGoogle />
             </form>
         </div>
     );

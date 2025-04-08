@@ -10,6 +10,7 @@ function Profile() {
         auth.onAuthStateChanged(async (user) => {
             if (user) {
                 try {
+                    
                     const userRef = doc(db, "users", user.uid);
                     const docSnap = await getDoc(userRef);
                     if (docSnap.exists()) {
@@ -58,7 +59,7 @@ function Profile() {
                     </h3>
                     <div className="text-left space-y-2 mb-6">
                         <p><span className="font-semibold">First Name:</span> {userDetails.firstName}</p>
-                        <p><span className="font-semibold">Last Name:</span> {userDetails.lastName}</p>
+
                         <p><span className="font-semibold">Email:</span> {userDetails.email}</p>
                     </div>
                     <button
